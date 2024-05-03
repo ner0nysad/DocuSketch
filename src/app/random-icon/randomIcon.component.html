@@ -1,0 +1,6 @@
+<div class="random-icon">
+  <button class="button" (click)="getRandomIcon()" [disabled]="loading">
+    {{ loading ? "Загрузка..." : "Показать случайную иконку" }}
+  </button>
+  <fa-icon class="icon" *ngIf="randomIcon" [icon]="randomIcon" size="3x"></fa-icon>
+</div>
